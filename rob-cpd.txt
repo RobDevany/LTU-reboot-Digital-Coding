@@ -10,7 +10,7 @@ Reflection
 // Your reflection goes here
  
 
-In today's session I've been able to create a repo, clone a repo and successfully committed changes to it. I've also had an intro to Git/Guthub and were shown a quick demo on the advantages of using VSCode including installing an extension. 
+In today's session I've been able to create a repo, clone a repo and successfully committed changes to it. I've also had an intro to Git/Guthub and had a quick demo on the advantages of using VSCode including installing an extension. 
 
 On a personal note what has been interesting is seeing the relationship between the editor & git.
 
