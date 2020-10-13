@@ -14,4 +14,4 @@ In today's session I've been able to create a repo, clone a repo and successfull
 
 On a personal note what has been interesting is seeing the relationship between the editor & git.
 
-I'm typing some additional text to build the habit of addind a description every time I make a commit. 
+I'm typing some additional text to build the habit of adding a description every time I make a commit. 
