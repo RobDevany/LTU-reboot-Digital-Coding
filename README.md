@@ -1,2 +1,2 @@
 # LTU-reboot-Digital-Coding
-Reboot course run by LTU. It is where I will store my participation in the coding course
+Reboot course run by LTU. My evidence of practical work throughout the course.
