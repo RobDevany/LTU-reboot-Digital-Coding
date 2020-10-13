@@ -1,1 +1,17 @@
-This is an example of a change
+Module / Session - date
+ 
+
+1.3. - 13/10/2020
+ 
+
+Reflection
+ 
+
+// Your reflection goes here
+ 
+
+In today's session I've been able to create a repo, clone a repo and successfully committed changes to it. I've also had an intro to Git/Guthub and were shown a quick demo on the advantages of using VSCode including installing an extension. 
+
+On a personal note what has been interesting is seeing the relationship between the editor & git.
+
+
