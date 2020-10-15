@@ -7,7 +7,7 @@ Module / Session - date
 Reflection
  
 
-// Your reflection goes here
+    // Your reflection goes here
  
 
 In today's session I've been able to create a repo, clone a repo and successfully committed changes to it. I've also had an intro to Git/Guthub and had a quick demo on the advantages of using VSCode including installing an extension. 
@@ -15,3 +15,10 @@ In today's session I've been able to create a repo, clone a repo and successfull
 On a personal note what has been interesting is seeing the relationship between the editor & git.
 
 I'm typing some additional text to build the habit of adding a description every time I make a commit. 
+
+
+1.4. - 15/10/2020
+ 
+Whilst waiting on others getting up to speed with GitHub I decided to change my Git username to something I could use both personally and professionally. I then needed to run some command line on my terminal to ensure that my cloned repo matched the master on Git.
+
+I also created a new folder and added a new HTML file for today's task. I had done this previously when working through the Internal fundamentals. 
