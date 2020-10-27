@@ -10,12 +10,32 @@ h1 {
     font-size: large;
     background-color: black;
 }
-ol {
-    color: blue;
+ol li strong{
+    color: rgb(73, 119, 105);
     background-image: url("https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     }
 
 p {
     color: blueviolet;
     font-weight: bold;
+}
+body#main_content ol{
+    font-family: fantasy;  }
+
+body#random-para {
+    color: #fc03df; 
+}
+
+span{
+    background-color: pink;
+    font-size: 30px;
+    color: red
+}
+
+span#random-para {
+    color: aquamarine;
+}
+
+span#more-random { 
+    font-size: 60px;
 }
