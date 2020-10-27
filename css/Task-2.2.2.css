@@ -6,6 +6,9 @@ img {
     max-width: width 300px;
 }
 h1 {
+    /* mutliple values can be added providing they are seperated by a semi colon */ 
+    /* font-family can be used directly */
+    /* @font-face can be used to import fonts you may have that sit outside of what is readily available */
     color: #fc03df;
     font-size: large;
     background-color: black;
