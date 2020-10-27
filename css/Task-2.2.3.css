@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+img {
+    max-width: width 300px;
+}
+h1 {
+    color: #fc03df;
+    font-size: large;
+    background-color: black;
+}
+ol {
+    color: blue;
+    background-image: url("https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+
+p {
+    color: blueviolet;
+    font-weight: bold;
+}
