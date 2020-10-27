@@ -7,15 +7,20 @@ img {
 }
 h1 {
     color: #fc03df;
-    font-size: large;
+    font-size: 100px;
     background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 ol {
     color: blue;
     background-image: url("https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
 p {
     color: blueviolet;
-    font-weight: bold;
+    font-weight: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10
+    px;
 }
