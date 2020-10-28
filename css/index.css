@@ -1,0 +1,27 @@
+body{
+    background-color: grey;
+    color: white;
+    }
+
+    h1{
+        color: blueviolet;
+        font-size: 100px;
+    }
+
+    h2{
+        color: blue;
+        font-style: italic;
+        }
+
+    span{
+        color: red;
+        font-style: italic;
+        }
+
+        /* not sure why this wouldn't overwrite the span tag above. Couldn't seem to get this to work as code
+        body#span-example{
+            color: purple;
+            font-style: italic;
+            }
+            */
+
