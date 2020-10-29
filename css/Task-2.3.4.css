@@ -1,0 +1,6 @@
+header, main, footer {
+    border: 2px dashed red;
+    padding: 25px;
+    margin: 25px;
+    width: 180px;
+}
