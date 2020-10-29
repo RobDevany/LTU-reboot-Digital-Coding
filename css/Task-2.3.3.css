@@ -1,0 +1,6 @@
+a:link  {/* unvisited link */
+    color:red
+        } 
+a:visited {/* visited link */
+    color: blue
+        } 
