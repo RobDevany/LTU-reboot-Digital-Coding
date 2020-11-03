@@ -1,0 +1,33 @@
+img{
+    max-width:500px
+    }
+.imageContainer{
+    position:relative;
+    }
+.imageContainer .imageCaption{
+    position: absolute;
+    margin:0;
+    Background: white;
+    border: 1px solid black;
+    top: 10px;
+    left: 10px;
+    padding: 10px;    
+    }
+.imageContainer .imageCaptionSecond{
+    position: absolute;
+    margin:0;
+    Background: white;
+    border: 1px solid black;
+    top: 50px;
+    left: 10px;
+    padding: 10px;  
+    }
+.imageContainer .imageCaptionThird{
+        position: absolute;
+        margin:0;
+        Background: white;
+        border: 1px solid black;
+        top: 90px;
+        left: 10px;
+        padding: 10px; 
+}
