@@ -1,0 +1,44 @@
+img {
+    max-width:500px;
+    width:100%
+}
+
+.imageContainer{
+    position:relative;
+}
+
+.imageContainer .imageCaption{
+        position: absolute;
+        margin:0;
+        background:white;
+        border:1px solid black;
+        top:10px;
+        left:10px;
+        padding:10px;
+        z-index:10;
+    }
+
+.imageContainer .imageCaptionSecond{
+        position:absolute;
+        margin:0;
+        background:white;
+        border:1px solid black;
+        top:10px;
+        left:10px;
+        padding:10px;
+        z-index:10;
+    }
+
+main{
+    max-width:calc(75% - 40px);
+    float:left;
+    padding: 20px;
+}
+aside{
+    max-width:calc(25% - 40px);
+    float:left;
+    padding: 20px;
+}
+footer{
+    clear:both;
+} 
