@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript task 3.1.6</h1>
+    </header>
+    <main>
+        <p>To view this task you will need to open the console in developer tools.</p>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <p>&copy; 2020</p>
+    </footer>
+    <script>
+        var billTotal = 35.00;
+        var tipPercent = 15;
+        var tipAmount = (billTotal / 100) * tipPercent;
+        console.log(billTotal);
+        console.log(tipPercent);
+        console.log(tipAmount);
+
+        var totalPaid = billTotal + tipAmount;
+
+        var message = 'Your bill was &pound;' + billTotal + ', you tipped ' + tipPercent + '%, which comes to &pound;' + tipAmount + ', taking your total paid to &pound;' + totalPaid;
+
+        console.log(message);
+        document.write(message);
+    </script>
+</body>
+</html> 
