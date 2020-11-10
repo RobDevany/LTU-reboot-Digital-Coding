@@ -1,7 +1,12 @@
+h1{
+    color: red;
+}
+
 main{
     max-width:calc(75% - 58px);
     max-width:calc(75%);
     float:left;
+
 }
 
 aside{
