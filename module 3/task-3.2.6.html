@@ -29,7 +29,7 @@
                 blnFailedValidation = true;
             }
             
-            if(!blnFailedValidation){ /* If this is true i.e has not failed validation then the below will run */
+            if(!blnFailedValidation){ /* If this is true i.e has not failed validation then the below will run, the logical operator is defined by ! */
                 if(temperature < 0){
                     return 'Do not leave the house it\'s bastard freezing';
                 }
