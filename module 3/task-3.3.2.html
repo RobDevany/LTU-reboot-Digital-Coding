@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript task 3.3.2</h1>
+    </header>
+    <main>
+        <p>To view this task you will need to open the console in developer tools.</p>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <p>&copy; 2020</p>
+    </footer>
+        
+    <script>
+
+        function calculator(size,drink){
+            var strMessage = 'You have ordered a' + size;
+            switch(drink){
+                case 'Rola Cola':
+                    strMessage += ' Rola Cola';
+                    break;
+                case 'Sharp Lemonade':
+                    strMessage += ' Sharp Lemonade';
+                    break;
+                case 'Dr P':
+                    strMessage += ' Dr P';
+                    break;
+                default:
+                    strMessage = 'We do not sell ' + drink;
+            }
+            return strMessage
+        }
+        
+           var drinkMessage = calculator(' small','Rola Cola');
+           console.log(drinkMessage);
+           drinkMessage = calculator(' large','Dr P');
+           console.log(drinkMessage);
+           drinkMessage = calculator(' tiny','Sharp Lemonade');
+           console.log(drinkMessage);
+           drinkMessage = calculator(' vente','Mocha Choca Chai Vegan Latte');
+           console.log(drinkMessage);
+           
+    </script>
+</body>
+</html> 

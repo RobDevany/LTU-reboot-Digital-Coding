@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/task-3.2.1.css" />
+    <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
     <title>Document</title>
 </head>
 <body>
@@ -18,44 +18,24 @@
     <footer>
         <p>&copy; 2020</p>
     </footer>
+        
     <script>
-        
-        
-        function wearACoat(temperature){
-            
-            blnFailedValidation = false;
-            if(isNaN(temperature)){
-                console.log('Temperature argument must be a number');            
-                blnFailedValidation = true;
-            }
-            
-            if(!blnFailedValidation){ /* If this is true i.e has not failed validation then the below will run, the logical operator is defined by ! */
-                if(temperature < 0){
-                    return 'Do not leave the house it\'s bastard freezing';
-                }
-                if(temperature < 10){
-                    return 'You need to wear a coat and a scarf, it\'s keld';
-                }
-                if(temperature < 15){
-                    return 'Tha shud be reyt in just a coat';
-                }
-                return 'You don\'t need to wear a coat';
-            } else {
-                return;
-            }
+/* under the script is where any javascript would be written */
+/* this function is called percentageCalculator and it will take a total (number) and a given percentage (number) if will then return whatever the value is of that calculation and display it in the console */
+        function percentageCalculator(total,percentage){
+            return calculatedPercentage = (total / 100) * percentage
         }
-        
-        var temperatureInput;
-        temperatureInput = -3;
-        console.log(wearACoat(temperatureInput));
-        temperatureInput = 5;
-        console.log(wearACoat(temperatureInput));
-        temperatureInput = 13;
-        console.log(wearACoat(temperatureInput));
-        temperatureInput = 20;
-        console.log(wearACoat(temperatureInput));
 
+        /* these will be demonstrated in the console on the webpage, the console is calling the function name */
+
+        console.log(percentageCalculator(100,50))
+        console.log(percentageCalculator(100,11))
+        console.log(percentageCalculator(79,25))
+        console.log(percentageCalculator(100,67))
+        console.log(percentageCalculator(73.7,400))
+        console.log(percentageCalculator(100,0.7))
+        console.log(percentageCalculator(45,82.7))
 
     </script>
 </body>
-</html>
+</html> 
