@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript task 3.3.3</h1>
+    </header>
+    <main>
+        <p>To view this task you will need to open the console in developer tools.</p>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <p>&copy; 2020</p>
+    </footer>
+        
+    <script>
+
+        function calculator(number1, number2,operator){
+            var maths;
+            switch(operator){
+                case '+':
+                    maths = number1 + number2;
+                    break;
+                case '-':
+                    maths = number1 - number2;
+                    break;
+                case '*':
+                    maths = number1 * number2;
+                    break;
+                case '/':
+                    maths = number1 / number2;
+                    break;
+                case '%':
+                    maths = number1 % number2;
+                break;      
+            }
+            return maths;
+        }
+
+        var a = 10;
+        var b = 3;
+
+        var strMessage = a + '+' + b + ' = ' + calculator(a,b,'+');
+        console.log(strMessage);
+        var strMessage = a + '-' + b + ' = ' + calculator(a,b,'-');
+        console.log(strMessage);
+        var strMessage = a + '*' + b + ' = ' + calculator(a,b,'*');
+        console.log(strMessage);
+        var strMessage = a + '/' + b + ' = ' + calculator(a,b,'/');
+        console.log(strMessage);
+        var strMessage = a + '%' + b + ' = ' + calculator(a,b,'%');
+        console.log(strMessage);
+
+        total = 250
+        percentage = 50
+        totalPercentage = calculator(percentage,calculator(total,100,'/'),'*');
+        console.log(totalPercentage);
+
+    </script>
+</body>
+</html> 
