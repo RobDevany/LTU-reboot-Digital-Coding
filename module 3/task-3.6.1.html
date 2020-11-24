@@ -32,6 +32,11 @@
         paragraph.innerHTML = 'Hello LTU Class';
         // console.log(paragraph);
         container.appendChild(paragraph);
+
+        image.addEventListener('mouseover',function(event){
+            console.log(event);
+            alert('Hovered Over Image');
+        });
     </script>
 </body>
 </html>
