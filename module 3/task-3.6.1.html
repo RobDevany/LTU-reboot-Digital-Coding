@@ -17,6 +17,11 @@
     </main>
     <aside>
         <a id="leedsTrinityLink" href="https://www.leedstrinity.ac.uk/">Leeds Trinity Link</a>
+        <form>
+            <input id="fiveTimesInput" name="fiveTimesInput" />
+            <button id="submitCalculator" type="submit">Calculate</button>
+            <p id="fiveTimesValue"></p>
+        </form>
     </aside>
     <footer>
         <p>&copy; 2020</p>
@@ -35,12 +40,26 @@
             console.log(event);
             alert('Hovered Over Image');
         });
-
+        
         var link = document.getElementById('leedsTrinityLink');
         link.addEventListener('click',function(event){
             event.preventDefault();
             console.log('preventDefault being used');
         });
+
+        var calculatorButton = document.getElementById('submitCalculator');
+        var fiveTimesValueOutput = document.getElementById('fiveTimesValue');
+        calculatorButton.addEventListener('click',function(event){
+            event.preventDefault();
+            var inputValue = document.getElementById('fiveTimesInput').value;
+            if(isNaN(inputValue) || !inputValue){
+                strMessage = 'Value entered is not a number';
+                fiveTimesValueOutput.innerHTML = strMessage;
+            } else {
+                var sum = inputValue * 5;
+                fiveTimesValueOutput.innerHTML = sum;
+            }
+        })
     </script>
 </body>
 </html> 
