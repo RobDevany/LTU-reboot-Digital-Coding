@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">getTot
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
     <title>Document</title>
 </head>
@@ -33,16 +33,16 @@
             {name:"onions",type:"food",quantity:3,price:.4}
         ];
 
-        function itemPriceRange(arrCar,lowPrice,highPrice){
+        function itemPriceRange(arrCart,lowPrice,highPrice,quantity=false){
             //testing the object is correct
             console.log(arrCart);
             console.log(lowPrice);
             console.log(highPrice);
             //create an array to populate with items between the ranges
             var arrItems = [];
-            for(counter=0; counter <arrCart.length; counter++){
+            for(counter=0; counter < arrCart.length; counter++){
                 //setting the variable for the current cart item
-                currentItem = arrcart[counter];
+                currentItem = arrCart[counter];
                 console.log(currentItem);
                 //setting the variable for the item so it can be manipulated if required
                 itemPrice = currentItem.price;
@@ -56,9 +56,11 @@
                 }
             }
             return arrItems;
-
+        }
         var arrPriceRangeItems = itemPriceRange(arrShoppingCart,1,4);
         console.log(arrPriceRangeItems);   
+        arrPriceRangeItems = itemPriceRange(arrShoppingCart,1,4,true);
+        console.log(arrPriceRangeItems);
 
     </script>
 </body>
