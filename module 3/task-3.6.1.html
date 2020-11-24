@@ -12,7 +12,7 @@
     </header>
     <main>
         <div id="imageContainer">
-            <img id="changeMe" src="https://images.pexels.com/photos/726478/pexels-photo-726478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <img id="changeMe" src="https://images.pexels.com/photos/3523/animal-drinking-elk-moose.jpg" />
         </div>
     </main>
     <aside>
@@ -23,9 +23,15 @@
     <script>
 
         var image = document.getElementById('changeMe');
-        var newSrc = 'https://images.pexels.com/photos/34096/blue-tit-bird-cute-nature.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500';
+        var newSrc = 'https://images.pexels.com/photos/667201/pexels-photo-667201.jpeg';
         image.src = newSrc;
-        var container = document.getElementById('imageContainer').style.border = '10px dashed blue';
+        var container = document.getElementById('imageContainer')
+        container.style.border = '3px dashed red';
+
+        var paragraph = document.createElement('p');
+        paragraph.innerHTML = 'Hello LTU Class';
+        // console.log(paragraph);
+        container.appendChild(paragraph);
     </script>
 </body>
 </html>
