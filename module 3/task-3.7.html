@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/task-3.1.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript task 3.7</h1>
+    </header>
+    <main>
+        <input id="searchBox" />
+        <div class="filterContainer">
+            <button class="buttonFilter selectedFilter" animal="all">Show All</button>
+            <button class="buttonFilter" animal="dachsund">Dachsund</button>
+            <button class="buttonFilter" animal="horse">Horse</button>
+            <button class="buttonFilter" animal="otter">Otter</button>
+            <button class="buttonFilter" animal="turkey">Turkey</button>
+        </div>
+        <div class="imageFilter dachsund">
+            <img src="https://images.pexels.com/photos/169524/pexels-photo-169524.jpeg" />
+            <h2 class="imageTitle">Image one</h2>
+        </div>
+        <div class="imageFilter horse">
+            <img src="https://images.pexels.com/photos/1236028/pexels-photo-1236028.jpeg" />
+            <h2 class="imageTitle">Image two horses on the beach</h2>
+        </div>
+        <div class="imageFilter otter">
+            <img src="https://images.pexels.com/photos/4754846/pexels-photo-4754846.jpeg" />
+            <h2 class="imageTitle">Image three</h2>
+        </div>
+        <div class="imageFilter turkey">
+            <img src="https://images.pexels.com/photos/1078781/pexels-photo-1078781.jpeg" />
+            <h2 class="imageTitle">Image four</h2>
+        </div>
+        <div class="imageFilter dachsund">
+            <img src="https://images.pexels.com/photos/257519/pexels-photo-257519.jpeg" />
+            <h2 class="imageTitle">Image two</h2>
+        </div>
+        <div class="imageFilter horse">
+            <img src="https://images.pexels.com/photos/3969316/pexels-photo-3969316.jpeg" />
+            <h2 class="imageTitle">Image three</h2>
+        </div>
+        <div class="imageFilter otter">
+            <img src="https://images.pexels.com/photos/5411583/pexels-photo-5411583.jpeg" />
+            <h2 class="imageTitle">Image five</h2>
+        </div>
+        <div class="imageFilter turkey">
+            <img src="https://images.pexels.com/photos/1300339/pexels-photo-1300339.jpeg" />
+            <h2 class="imageTitle">Image six</h2>
+        </div>
+        <div class="imageFilter dachsund">
+            <img src="https://images.pexels.com/photos/1139795/pexels-photo-1139795.jpeg" />
+            <h2 class="imageTitle">Image one</h2>
+        </div>
+        <div class="imageFilter horse">
+            <img src="https://images.pexels.com/photos/1449658/pexels-photo-1449658.jpeg" />
+            <h2 class="imageTitle">Image one</h2>
+        </div>
+        <div class="imageFilter otter">
+            <img src="https://images.pexels.com/photos/146010/pexels-photo-146010.jpeg" />
+            <h2 class="imageTitle">Image four</h2>
+        </div>
+        <div class="imageFilter turkey">
+            <img src="https://images.pexels.com/photos/917595/pexels-photo-917595.jpeg" />
+            <h2 class="imageTitle">Image two</h2>
+        </div>
+        <div class="imageFilter dachsund">
+            <img src="https://images.pexels.com/photos/4490127/pexels-photo-4490127.jpeg" />
+            <h2 class="imageTitle">Image three</h2>
+        </div>
+        <div class="imageFilter horse">
+            <img src="https://images.pexels.com/photos/850424/pexels-photo-850424.jpeg" />
+            <h2 class="imageTitle">Image six</h2>
+        </div>
+        <div class="imageFilter otter">
+            <img src="https://images.pexels.com/photos/55754/otter-animals-fur-wet-55754.jpeg" />
+            <h2 class="imageTitle">Image six</h2>
+        </div>
+        <div class="imageFilter turkey">
+            <img src="https://images.pexels.com/photos/139650/pexels-photo-139650.jpeg" />
+            <h2 class="imageTitle">Image four</h2>
+        </div>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        <p>&copy; 2020</p>
+    </footer>
+    <script>
+        //getting all of the html elements with the class buttonFilter
+        var buttons = document.querySelectorAll(".buttonFilter");
+        //getting all of the html elements with the class imageFilter
+        var images = document.querySelectorAll(".imageFilter");
+        //testing the buttons were selected
+        console.log(buttons);
+        //testing the images were selected
+        console.log(images);
+        //LOOP through all the buttons
+        for(buttonCounter = 0; buttonCounter < buttons.length; buttonCounter++){
+            //selecting the current button based on the loop counter
+            var currentButton = buttons[buttonCounter];
+            // testing the current button is selected correctly
+            console.log(currentButton);
+            //addEventListener for a click event
+            currentButton.addEventListener("click", function() {
+                var searchText = document.getElementById('searchBox').value;
+                console.log(searchText);
+                //selected the currently highlighted button
+                var selectedFilter = document.querySelector('.selectedFilter');
+                //removed the class from the currently highlighted button
+                selectedFilter.classList.remove("selectedFilter");
+                //added the class to the button that has been clicked
+                this.classList.add("selectedFilter");
+                // console.log(selectedFilter);
+                //getting the animal attribute from the button html
+                var animal = this.getAttribute("animal");
+                //testing the animal variable
+                console.log(animal);
+                //LOOP through all the images
+                for(imageCounter = 0; imageCounter < images.length; imageCounter++){
+                    //IF the animal variable = all
+                    var currentImage = images[imageCounter];
+                    if(animal == 'all'){
+                        //show all images
+                        if(!searchText){
+                            currentImage.style.display = 'block';
+                        } else {
+                            for (var i = 0; i < currentImage.childNodes.length; i++) {
+                                if (currentImage.childNodes[i].className == "imageTitle") {
+                                    title = currentImage.childNodes[i].innerHTML;
+                                    if(title.indexOf(searchText) !== -1){
+                                        currentImage.style.display = 'block';
+                                        console.log(title.indexOf(searchText));
+                                    } else {
+                                        currentImage.style.display = 'none';
+                                    }
+                                }        
+                            }
+                        }
+                    }
+                    //ELSE
+                    else {   
+                        //IF the image has the same class as the animal variable 
+                        if(currentImage.classList.contains(animal)){
+                            //show image
+                            if(!searchText){
+                                currentImage.style.display = 'block';
+                            } else {
+                                for (var i = 0; i < currentImage.childNodes.length; i++) {
+                                    if (currentImage.childNodes[i].className == "imageTitle") {
+                                        title = currentImage.childNodes[i].innerHTML;
+                                        if(title.indexOf(searchText) !== -1){
+                                            currentImage.style.display = 'block';
+                                        } else {
+                                            currentImage.style.display = 'none';
+                                        }
+                                    }        
+                                }
+                            }
+                        }
+                        //ELSE
+                        else {
+                            //hide image
+                            currentImage.style.display = 'none';
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -17,4 +17,21 @@ img{
 
 .redDashedBorder{
     border:3px dashed red;
-} 
+}
+
+.imageFilter{
+    width:200px;
+    float:left;
+}
+
+.imageFilter img{
+    max-width:100%;
+}
+
+.filterContainer{
+    margin-bottom:50px;
+}
+
+.selectedFilter{
+    border:1px solid red;
+}
