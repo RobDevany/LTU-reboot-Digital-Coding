@@ -40,7 +40,7 @@
         for(counter  = 0; counter < arrBookList.length; counter ++){
             var objCurrentBook = arrBookList[counter];
             //THEN create a message to output that is {title} by {author}
-            var strMessage = objCurrentBook.title + ' by ' objCurrentBook.author;
+            var strMessage = objCurrentBook.title + ' by ' + objCurrentBook.author;
             //IF the book has already been read
             if(objCurrentBook.hasRead){
                 //THEN prepend the messge with "You have read "
